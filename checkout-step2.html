@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Checkout step 1 </title>
+</head>
+<body>
+    <!-- Head -->
+
+    <ul>
+        <li>
+            <a href="checkout-step1.html"> 01 CUSTOMER INFO </a>
+        </li>
+        <li>
+    <!-- No se si aqui deberia ir un strong o se usaria despues css -->
+            <a href="checkout-step2.html">  02 SHIPPING INFO </a>
+        </li>
+        <li>
+            <a href="checkout-step3.html">  03 PAYMENT SELECTION </a>
+        </li>
+    </ul>
+    <h1>Shipping Information</h1>
+
+    <!-- Shipping Information -->
+
+    <div>
+            <p> amy Larson <br>
+                Unit 2 Green Mount Retail Park <br>
+                Halifax <br>
+                HX1 5QN <br>
+                Tel:  0344 332 5931</p> <br>
+                <button type="button">
+                    Edit Address
+                </button>
+                <button type="button">
+                    Add New
+                </button>
+    </div>
+    <div>
+            <img src="images/mapa.jpeg" width="357" height="228" alt="Cordenadas de la direccion añadida">
+    </div>
+    <!-- Shipping Method -->
+    <form action="...">
+        <fieldset>
+            <legend> Shipping Method </legend>
+            
+            
+            <div>
+                <input type="radio" id="standard" name="Shipping Method" checked>
+                <label for="standard">Standart Delivery</label>
+                <span>free</span>
+                <p> (Estimated 14-20 Day Shipping (Duties and taxes may be due upon delivery) </p>
+            </div>
+            <div>
+                <input type="radio" id="fast" name="Shipping Method">
+                <label for="fast">Fast Delivery</label>
+                <span>€ 8.00</spa4>
+                <p> (Estimated 14-20 Day Shipping (Duties and taxes may be due upon delivery) </p>
+            </div>
+        </fieldset>
+    </form>
+    <!-- Buttons foot-->
+    <a href="checkout-step1.html"> ← Back to Customer Info </a>
+    <a href="checkout-step3.html"> Continue to Payment </a>
+    <!-- Shopping Cart-->
+    <div>
+        <h2> Shopping Cart </h2>
+        <span> 2 </span>
+        <hr>
+        <div>
+            <img src="images/bolso.jpeg" alt="" width="88" height="88">
+            <p>Lightweight College Backpack</p>
+            <span> € 99.90 </span>
+        </div>
+        <div>
+            <img src="images/reloj.jpeg" alt="" width="88" height="88">
+            <p> Business Casual Leather Watch Waterproof </p>
+            <span> € 69.90 </span>
+        </div>
+        <hr>
+        
+        <div>
+            <select>
+              <option selected> Have a Voucher? </option>
+              <option value=""> 10%</option>
+              <option value=""> 50%</option>
+            </select>
+        </div>
+        <hr>
+        <div>
+            <p> Subtotal </p>
+            <span> € 169.80 </span>
+            <p> Shipping </p>
+            <p> Free </p>
+            <hr>
+            <p> Total</p>
+            <span> € 169.80 </span>
+        </div>
+    </div>    
+
+</body>
+</html>

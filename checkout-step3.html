@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Head -->
+    <ul>
+        <li>
+            <a href="checkout-step1.html"> 01 CUSTOMER INFO </a>
+        </li>
+        <li>
+            <a href="checkout-step2.html">  02 SHIPPING INFO </a>
+        </li>
+        <li>
+             <!-- No se si aqui deberia ir un strong o se usaria despues css -->
+            <a href="checkout-step3.html">  03 PAYMENT SELECTION </a>
+        </li>
+    </ul>
+    <form action="...">
+        <fieldset>
+            <legend> Payment Selection </legend>
+            
+            
+            <div>
+               <input type="radio" id="card" name="paymentSelection" checked>
+               <label for="card"> Credit card <br>
+                      Safe money transfer using your bank account. Visa, Maestro, Discover, American Express. </label>
+               <img src="images/card.jpg"  width="106" height="22" alt="tarjetas que aceptan">
+            </div>
+            <div>
+                <label for="cardNumber"> CARD NUMBER </label>
+                <input type="tel" id="cardNumber" name="paymentSelection">
+                <img src="images/simCard.png" width="30" height="18" alt="simbolo de de tarjeta">
+            </div>
+            <div>
+                <label for="nameCard"> NAME ON CARD</label>
+                <input type="text" id="nameCard" name="paymentSelection">
+            </div>
+            <div>
+                <label for="date"> EXPIRY DATE </label>
+                <input type="month" id="date" name="paymentSelection">
+            </div>
+            <div>
+                <label for="code"> CVV CODE </label>
+                <input type="number" id="code" name="paymentSelection">
+            </div>
+            <div>
+                <input type="radio" id="paypal" name="paymentSelection">
+                <label for="paypal"> PayPal <br>
+                    You will be redirected to PayPal website to complete your purchase securely.
+                </label>
+                <img src="images/paypal.jpeg" width="90" height="24" alt="PayPal">
+            </div>
+        </fieldset>
+        <!-- Buttons foot-->
+        <a href="checkout-step2.html"> ← Back to Shipping Info </a>
+        <a href="#"> Complete Order </a>
+        <!-- Shopping Cart-->
+        <div>
+        <h2> Shopping Cart </h2>
+        <span> 2 </span>
+        <hr>
+        <div>
+            <img src="images/bolso.jpeg" alt="" width="88" height="88">
+            <p>Lightweight College Backpack</p>
+            <span> € 99.90 </span>
+        </div>
+        <div>
+            <img src="images/reloj.jpeg" alt="" width="88" height="88">
+            <p> Business Casual Leather Watch Waterproof </p>
+            <span> € 69.90 </span>
+        </div>
+        <div>
+            <hr>
+            <select>
+              <option selected> Have a Voucher? </option>
+              <option value=""> 10%</option>
+              <option value=""> 50%</option>
+            </select>
+            <hr>
+        </div>
+        <div>
+            <p> Subtotal </p>
+            <span> € 169.80 </span>
+            <p> Shipping </p>
+            <p> Free </p>
+            <hr>
+            <p> Total</p>
+            <span> € 169.80 </span>
+        </div>
+    </div>    
+    </form>
+</body>
+</html>
